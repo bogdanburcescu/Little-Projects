@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="weatherapp.css" />
+</head>
+
+<body>
+  <div id="insertCity">
+    <input type="text" name="city" id="cityinput" placeholder="Introdu un oras folosind diacritice"
+      onclick="clearContent()" />
+    <input type="button" name="weatherNow" value="Arata vremea" class="button" onclick="getWeatherElems();" />
+    <input type="button" name="weatherForecast" value="Afiseaza prognoza" class="button"
+      onclick="getWeatherForecast();" />
+  </div>
+  <div id="weatherNowContainer" class="hidden">
+  </div>
+  <div id="weatherForecastContainer" class="hidden">
+    <div class="header">
+      <h4>Vremea in urmatoarele zile</h4>
+    </div>
+    <hr>
+    <table>
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+        <tr id="zero">
+        </tr>
+        <tr id="three">
+        </tr>
+        <tr id="six">
+        </tr>
+        <tr id="nine">
+        </tr>
+        <tr id="twelve">
+        </tr>
+        <tr id="fifteen">
+        </tr>
+        <tr id="eighteen">
+        </tr>
+        <tr id="twenty_one">
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="weatherapp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body{
+  width: 265mm;
+  margin: auto; 
+}
+
+.hidebanner{
+  visibility: hidden; 
+  display: flex; 
+  align-items: center;
+  background-color: rgb(211, 208, 208) ;
+  color:green;
+  margin-bottom: 2mm;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around; 
+    border: 1mm solid black; 
+    padding: 3mm;  
+}
+input[type=text], textarea {
+    width: 79mm;
+    padding: 3mm; 
+}
+
+button {
+    position: relative;
+    left:79mm;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4c42d3da;
+   }
+input[type=submit]:hover {
+    background-color: #0b033a;
+  } 
+img {
+   height: 125mm;    
+   width:134mm;
+  }
+  .red {
+    border-color: red
+  }
+    
+</style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="hidebanner">
+            <p id="LstName"></p>
+        </div>       
+        <div class="content">
+            <form method="POST" id="form"> 
+                      <label for="FirstName"></label><br>
+                      <input type="text" id="FirstName" name="firstname" placeholder="First name" onblur="myFct1('FirstName')">
+                    <br><br>
+                      <label for="LastName"></label><br>
+                      <input type="text" id="LastName" name="lastname" placeholder="Last name" onblur="myFct1('LastName')">
+                    <br><br>
+                    <p> Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male" onfocus="radiobtn()">
+                    <label for="male">M</label><br>
+                    <input type="radio" id="female" name="gender" value="female" onfocus="radiobtn()">
+                    <label for="female">F</label>
+                    <p id="error"></p>
+                    <textarea id ="textare" name="message" rows="10" placeholder="Your message here..."></textarea>
+                    <br><br>
+                    <button type="button" id ="btn1">Submit</button>          
+            </form>
+            <div>
+                <img src="https://woorkup.com/wp-content/uploads/2018/05/contact-form-7-vs-happyforms-1.png">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>

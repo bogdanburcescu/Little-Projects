@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="title">SHOPPING LIST</div>
+        <div id="form">
+            <input type="text" name="product" value="" id="product" onkeypress="enter(event)"/>
+            <button type="button" name="button" onclick="add()" >Add item</button>
+        </div>
+
+        <div id="sort">
+            <button type="button" name="button" onclick="sortAsc()">Sort asc</button>
+            <button type="text" name="button" onclick="sortDesc()">Sort desc</button>
+        </div>
+        <div id="table">
+            <table>
+              <thead>
+                <tr class="hidden">
+                  <td>Item description</td>
+                  <td>Action</td>
+                </tr>
+              </thead>
+              <tbody>
+      
+              </tbody>
+            </table>
+          </div>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>
